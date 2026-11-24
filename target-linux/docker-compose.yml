@@ -1,0 +1,13 @@
+services:
+  target-linux:
+    build: .
+    container_name: target-linux
+    hostname: target-linux
+    restart: unless-stopped
+    networks:
+      lab-net:
+        ipv4_address: 172.28.0.10
+
+networks:
+  lab-net:
+    external: true

@@ -1,0 +1,9 @@
+services:
+  ospd-openvas:
+    networks:
+      - default
+      - lab-net
+
+networks:
+  lab-net:
+    external: true
